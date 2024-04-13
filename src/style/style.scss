@@ -1,0 +1,116 @@
+$base-header-font: "Playfair Display", serif;
+$base-text-font: "Oxygen", sans-serif;
+
+@import "./mixins.scss";
+
+$base-header-font: PlayfairDisplay;
+$base-text-font: Oxygen;
+$font-text-white: #fffaf3;
+$font-header-black: #2c2820;
+$font-text-gray: #585245;
+$font-text-light-gray: #7e7666;
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@import "./overview_section.scss";
+@import "./results_section.scss";
+@import "./founder-info__section.scss";
+@import "./reviews_section.scss";
+@import "./goals_section.scss";
+@import "./partners_sections.scss";
+@import "./agenda_section.scss";
+
+.rotate {
+  animation: rotation 9s infinite linear;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $base-header-font;
+  font-optical-sizing: auto;
+  font-family: "Playfair Display", serif;
+  font-weight: 300;
+}
+
+body {
+  background-image: url(../img/Full_Page_Gradient.svg);
+  background-size: cover;
+  position: relative;
+  padding: 0 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include for-phone-only {
+    background-image: url(../img/Mobile\ Gradient\ Background.svg);
+    padding: 0 18px;
+  }
+}
+
+.container {
+  max-width: 1580px;
+
+  @include for-phone-only {
+    max-width: 380px;
+  }
+}
+
+button {
+  border-radius: 35.5px;
+  color: #fff;
+  border: none;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: 0.24px;
+  font-family: $base-text-font;
+  font-weight: normal;
+  white-space: nowrap; 
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  font-family: $base-text-font;
+  font-size: 21px;
+  line-height: 30px;
+  letter-spacing: 0.21px;
+  color: $font-text-light-gray;
+  margin-bottom: 3rem;
+
+  .last-footer-link {
+    margin-left: 5px;
+  }
+
+  @include for-phone-only {
+    font-size: 17px;
+    letter-spacing: 0.17px;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 26px 42px 30px 42px;
+    gap: 8px;
+  }
+}
+
+footer a {
+  color: $font-text-light-gray;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}

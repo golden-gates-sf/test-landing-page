@@ -1,0 +1,207 @@
+.section-agenda {
+    display: flex;
+    justify-content: center;
+    gap: 13.72em;
+    margin-top: 6.3em;
+  
+    @include for-phone-only {
+      flex-direction: column;
+      align-items: center;
+      gap: 4em;
+      margin-top: 4.5em;
+    }
+  
+    .agenda-container {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 2em 0;
+
+      @include for-phone-only {
+        padding: 0;
+        align-items: center;
+      }
+  
+      .days-selector {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background-color: #aa9f89;
+        color: #4d4433;
+        border-radius: 53px;
+        font-size: 41px;
+        line-height: 51px;
+        padding: 1rem;
+        width: 45%;
+        text-align: center;
+        width: 55rem;
+        gap: 10px;
+        align-items: center;
+        font-weight: 700;
+  
+        .selected-day {
+          background-color: #fdf3e3;
+          color: $font-header-black;
+          border-radius: 37px;
+          padding: 12px;
+  
+          @include for-phone-only {
+            width: 69%;
+            justify-self: center;
+            padding: 9px;
+            width: 77%;
+          }
+        }
+  
+        @include for-phone-only {
+          grid-template-rows: repeat(3, 1fr);
+          grid-template-columns: 1fr;
+          max-width: 350px;
+          border-radius: 30px;
+          font-size: 30px;
+            line-height: 39px;
+            padding: 2rem;
+            gap: 15px;
+        }
+      }
+  
+      .agenda-description {
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.2px;
+        color: $font-text-light-gray;
+        font-family: $base-text-font;
+        max-width: 55rem;
+  
+        @include for-phone-only {
+          font-size: 18px;
+          line-height: 28px;
+          letter-spacing: 0.18px;
+          color: $font-text-gray;
+        }
+  
+        .agenda-description__day-info {
+          margin: 9.1% 0;
+          display: flex;
+          flex-direction: column;
+          gap: 28px;
+  
+          @include for-phone-only {
+            align-items: center;
+            margin: 3.5em 0;
+            max-width: 19rem;
+          }
+        }
+  
+        .agenda-description__tasks {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-left: 4.1rem;
+          padding-top: 1.5rem;
+  
+          @include for-phone-only {
+            padding-left: 0;
+            padding-top: 0.5rem;
+          }
+  
+          .line {
+            width: 8px;
+            height: 91.8%;
+            background-color: #e99077;
+            opacity: 20%;
+            position: absolute;
+            top: 1.75rem;
+            left: 5.6rem;
+  
+            @include for-phone-only {
+              width: 5px;
+              left: 1rem;
+              height: 94.1%;
+            }
+          }
+  
+          .task-container {
+            display: flex;
+            gap: 2.2em;
+            max-width: 50em;
+            padding-bottom: 3em;
+  
+            @include for-phone-only {
+              gap: 1.3em;
+              max-width: 16.8em;
+              padding-bottom: 3.5em;
+            }
+  
+            .task-number {
+              background-color: #e99077;
+              color: #fff;
+              width: 56px;
+              height: 56px;
+              border-radius: 30px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              min-width: 56px;
+  
+              @include for-phone-only {
+                width: 35px;
+                height: 35px;
+                min-width: 35px;
+              }
+            }
+          }
+  
+          .task-description {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2em;
+          }
+        }
+  
+        .task-description span {
+          font-size: 32px;
+          line-height: 53px;
+          padding-top: 6px;
+          text-align: left;
+  
+          @include for-phone-only {
+            font-size: 20px;
+            line-height: 35px;
+            letter-spacing: 0.3px;
+            padding-top: 0;
+          }
+        }
+      }
+  
+      .agenda-description span {
+        font-size: 35px;
+        line-height: 53px;
+        color: $font-header-black;
+        font-family: $base-header-font;
+        font-weight: bold;
+  
+        @include for-phone-only {
+          font-size: 30px;
+          line-height: 39px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  
+  .section-agenda h2 {
+    font-size: 5rem;
+    line-height: 5.62rem;
+    color: $font-header-black;
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+  
+    @include for-phone-only {
+      text-align: center;
+      font-size: 35px;
+      line-height: 45px;
+      max-width: 180px;
+    }
+  }

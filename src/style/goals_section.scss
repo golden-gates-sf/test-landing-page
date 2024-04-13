@@ -1,0 +1,123 @@
+.goals-sunset-img {
+  height: 500px;
+}
+
+.section-goals {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 130px;
+  @include for-phone-only {
+    flex-direction: column-reverse;
+  }
+}
+
+.goals-container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+  max-width: 760px;
+  width: 100%;
+
+
+  & .goal-item {
+    border-bottom: 2px solid #aa9f89 ;
+    padding: 35px 0 40px;
+
+    &.active {
+      & .goal-item-text-wrapper {
+        margin-top: 45px;
+        grid-template-rows: 1fr;
+      }
+
+      & .goal-item__title::after {
+        transform: rotate(180deg);
+        background-image: url("../img/goals-section/minus-circle-line.svg");
+      }
+    } 
+
+    &-text-wrapper {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: all 0.3s; 
+      max-width: 690px;
+    }
+
+    p {
+      overflow: hidden;
+      height: 100%;
+      font-family: $base-text-font;
+      font-size: 20px;
+      color: $font-text-light-gray; 
+      line-height: 1.5;
+      letter-spacing: 0.2px;
+    }
+
+
+    &__title {
+      width: 100%;
+      justify-content: space-between;
+      display: flex;
+      font-family: $base-header-font;
+      color: $font-header-black;   
+      font-weight: bold;
+      font-size: 30px;
+      letter-spacing: 1.3px;
+      transition: all 0.3s;
+      &:hover {
+        cursor: pointer;
+      }
+
+      &::after {
+        transition: all 0.3s;
+        display: block;
+        content: '';
+        width: 32px;
+        height: 32px;
+        background-image: url("../img/goals-section/plus-circle-line.svg");
+      }
+    }
+  }
+
+  @include for-phone-only {
+    padding: 0;
+
+    .goal-item {
+      color: #585245;
+      font-size: 18px;
+      padding: 20px 0 20px;
+
+      &.active {
+        .goal-item-text-wrapper {
+          margin-top: 25px;
+          grid-template-rows: 1fr;
+        } 
+      }
+
+      & p {
+        font-size: 18.5px;
+        line-height: 1.56;
+        margin-right: 100px;
+      } 
+
+      &__title {
+        gap: 20px;
+        align-items: center;
+        font-size: 22.5px;
+        line-height: 1;
+        letter-spacing: normal;
+      }
+    }
+  }
+}
+
+.goals-woman-img {
+    height: 588px;
+    width: 588px;
+
+    @include for-phone-only {
+      width: 100%;
+      max-height: 350px;
+    }
+}

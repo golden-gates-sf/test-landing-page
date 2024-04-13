@@ -1,0 +1,55 @@
+.section-partners {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 6.3% 0;
+
+  @include for-phone-only {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 1em;
+    padding: 0 0 6.6em 0;
+
+    .last-partner-logo {
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column-start: 4;
+      grid-column-end: 5;
+    }
+
+    .second-partner-logo {
+      grid-column-start: 2;
+      grid-column-end: 4;
+    }
+
+    .average-partner-logo {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    .fourth-partner-logo {
+      grid-column-start: 3;
+      grid-column-end: 5;
+    }
+  }
+
+  .small-partner-logo {
+    height: 2.8rem;
+
+    @include for-phone-only {
+      height: 1.7rem;
+
+    }
+  }
+
+  .big-partner-logo {
+    height: 6.5rem;
+
+    @include for-phone-only {
+      height: 4.3rem;
+    }
+  }
+}

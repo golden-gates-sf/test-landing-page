@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="6686" viewBox="0 0 1920 6686">
+    <defs>
+        <radialGradient id="67sbaftzqb" cx=".5" cy=".5" r=".5" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#ddba7c"/>
+            <stop offset="1" stop-color="#ddba7c" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="hic09h0yic" cx=".5" cy=".5" r=".5" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#d88d78"/>
+            <stop offset="1" stop-color="#d88d78" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="o9ucpuz4jd" cx=".5" cy=".5" r=".5" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#e6bba3"/>
+            <stop offset="1" stop-color="#e6bba3" stop-opacity="0"/>
+        </radialGradient>
+        <clipPath id="8rcamag1qa">
+            <path data-name="Rectangle 139" style="fill:#fff;stroke:#707070" d="M0 0h1920v6686H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="Full Page Gradient" style="clip-path:url(#8rcamag1qa)">
+        <g data-name="Background Elements" transform="rotate(90 4386.429 540.071)">
+            <path data-name="Rectangle 55" transform="rotate(90 4607.209 7614.209)" style="fill:#fffbf5" d="M0 0h1920v11610.737H0z"/>
+            <g data-name="Group 18" transform="translate(0 343)">
+                <ellipse data-name="Ellipse 24" cx="3850.253" cy="1479" rx="3850.253" ry="1479" transform="translate(1254.078 3002)" style="opacity:.423;fill:url(#67sbaftzqb)"/>
+                <ellipse data-name="Ellipse 25" cx="4238.161" cy="1838.5" rx="4238.161" ry="1838.5" transform="translate(5670.613)" style="opacity:.423;fill:url(#67sbaftzqb)"/>
+                <ellipse data-name="Ellipse 26" cx="2743.393" cy="1190" rx="2743.393" ry="1190" transform="translate(0 3596)" style="fill:url(#hic09h0yic);opacity:.669"/>
+                <ellipse data-name="Ellipse 27" cx="2742.614" cy="1731.5" rx="2742.614" ry="1731.5" transform="translate(5446.281 1019)" style="opacity:.307;fill:url(#hic09h0yic)"/>
+            </g>
+            <ellipse data-name="Ellipse 24" cx="3849.474" cy="3966.5" rx="3849.474" ry="3966.5" transform="translate(10641.748)" style="opacity:.423;fill:url(#67sbaftzqb)"/>
+            <path data-name="Path 3885" d="M1552.051 4.511c1002.18 114.831 1938.2 970.162 2090.651 1910.435S3106.32 3524.372 2104.14 3409.54 165.944 2439.378 13.489 1499.106 549.871-110.32 1552.051 4.511z" transform="rotate(-19 16303.02 -50146.306)" style="opacity:.661;fill:url(#o9ucpuz4jd)"/>
+            <ellipse data-name="Ellipse 26" cx="2742.614" cy="1190.5" rx="2742.614" ry="1190.5" transform="translate(10998.497 2692)" style="opacity:.463;fill:url(#hic09h0yic)"/>
+        </g>
+    </g>
+</svg>
