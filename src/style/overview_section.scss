@@ -38,9 +38,10 @@ main {
     &-button {
       background-color: #cb6f56;
       padding: 1.12rem 3rem;
+      font-weight: bold;
 
       &::after {
-        content: 'Download your guide now';
+        content: 'Download Your Guide Now';
       }
     } 
   }

@@ -32,6 +32,7 @@
     &-button {
       background-color: #e27c61;
       padding: 1.12rem 2.5rem;
+      font-weight: bold;
       &::after {
         content: 'Discover Marni’s Proven Process';
       }
@@ -69,6 +70,7 @@
       &-button {
         padding: 19px 0;
         width: 100%;
+        font-weight: bold;
         &::after {
           content: 'Learn More';
         }
